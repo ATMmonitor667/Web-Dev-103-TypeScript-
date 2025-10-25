@@ -12,7 +12,7 @@ const Header = () => {
         <nav className = "hidden sm:hidden">
         </nav>
         <NavItems/>
-
+        
       </div>
     </header>
   )
