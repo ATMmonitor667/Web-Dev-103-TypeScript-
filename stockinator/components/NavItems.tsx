@@ -20,8 +20,8 @@ function navItems(){
     {
       NavITEMS.map(({href, label})=>
         <li key={href}>
-          <Link href={href} className ={`hover::text-yellow-500 transition-colors ${
-            isActive(href) ? 'text-grey-100' : ''
+          <Link href={href} className={`hover:text-yellow-500 transition-colors px-3 py-2 rounded-md ${
+            isActive(href) ? 'text-yellow-500 bg-gray-700' : 'text-gray-400'
             }`}>
             {label}
             </Link>
@@ -35,7 +35,7 @@ function navItems(){
 const NavItems = () => {
   return (
    <>
-   <ul className = "flex flex-col sm:flex-row p-2 gap-3 sm:gap-10 font-medium">
+   <ul className="flex flex-col sm:flex-row p-2 gap-2 sm:gap-6 font-medium">
     {navItems()}
     </ul>
    </>
